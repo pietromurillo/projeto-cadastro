@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="style" href="Z:\swi\bimestre2\projetoCadastroClientes\css\css\bootstrap.css">
+    <title>Projeto cadastro</title>
+</head>
+<body>
+    <h1>Filtro de Clientes</h1>
+    <p>Este sistema filtra os dados cadastrados no objeto javascript e traz apenas os clientes com idade >=18 anos.</p>
+    <ul id="listaClientesAdultos"></ul>
+
+    <button onclick="mostrarClientesAdultos()">Mostrar clientes</button>
+    <hr>
+    <h1>Cadastrar novo cliente</h1>
+
+    <label>Nome:
+        <input class="form-control form-control-lg" type="text" placeholder="" aria-label=".form-control-lg example">
+    </label>
+    <label>Idade:
+        <input class="form-control form-control-lg" type="text" placeholder="" aria-label=".form-control-lg example">
+    </label>
+    <label>Email:
+        <input class="form-control form-control-lg" type="text" placeholder="" aria-label=".form-control-lg example">
+    </label>
+    <button onclick="cadastrarCliente()">Cadastrar Cliente</button>
+
+    <p id="mensagemCadastro"></p>
+</body>
+</html>
